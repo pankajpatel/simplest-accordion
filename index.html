@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>SimplestAccordion by pankajpatel</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>SimplestAccordion</h1>
+        <p>The simplest Accordion Code</p>
+
+        <p class="view"><a href="https://github.com/pankajpatel/simplestAccordion">View the Project on GitHub <small>pankajpatel/simplestAccordion</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/pankajpatel/simplestAccordion/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/pankajpatel/simplestAccordion/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/pankajpatel/simplestAccordion">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<strong>simplestAccordion</strong> Plugin</h1>
+
+<hr><p><strong>Pankaj Patel</strong> [ <a href="http://pankaj.pro/">http://pankaj.pro/</a> ]</p>
+
+<hr><p>This plugin receives whole body as argument and processes the elements having the class [_item_]</p>
+
+<p>The recommended Document structure for the use of Plugin code is as below
+        `</p><div>
+            <div>Item 1</div>
+            <div>
+                <div>
+                    This is the content for Accordion 1
+                </div>
+            </div>
+
+<pre><code>        &lt;div class='item'&gt;Item 2&lt;/div&gt;
+        &lt;div class='item-data'&gt;
+            &lt;div&gt;
+                This is the content for Accordion 2
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='item'&gt;Item 3&lt;/div&gt;
+        &lt;div class='item-data' &gt;
+            &lt;div&gt;
+                This is the content for Accordion 3
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='item'&gt;Item 4&lt;/div&gt;
+        &lt;div class='item-data' &gt;
+            &lt;div&gt;
+                This is the content for Accordion 4
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;`
+</code></pre>
+
+<hr>
+<p>The CSS for the plugin is as below
+        `.container
+        {
+            display:block;
+            width: 500px;
+            height : auto ;
+            margin: 0 auto;
+        }</p>
+
+<pre><code>    .item
+    {
+        display : block;
+        width : inherit ;
+        height : 40px;
+        line-height : 40px;
+        background : #555 ;
+        border: 1px solid #000 ;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .item-data
+    {
+        display : none ; 
+        width : inherit ;
+        height : auto ;
+        border: 1px solid #ccc;
+    }
+
+    .active {
+        background : #eee ;
+        color : #000 ;
+    }
+    .item-data div{
+        margin: 30px;
+    }`
+</code></pre>
+
+<hr>
+</div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/pankajpatel">pankajpatel</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
