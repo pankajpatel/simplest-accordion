@@ -1,6 +1,6 @@
-### simplestAccordion Plugin
+# simplestAccordion Plugin
 -------------------------
-Pankaj Patel[http://pankaj.pro/]
+#### by Pankaj Patel[http://pankaj.pro/]
 ======================================
 This plugin receives whole body as argument and processes the elements having the class [item]
 
