@@ -1,11 +1,11 @@
 # simplestAccordion Plugin
 -------------------------
-#### by Pankaj Patel[http://pankaj.pro/]
-======================================
-This plugin receives whole body as argument and processes the elements having the class [item]
+
+This plugin receives whole body as argument and processes the elements having the class `item`
 
 The recommended Document structure for the use of Plugin code is as below
-```
+
+```html
 <div class='container'>
 	<div class='item'>Item 1</div>
 	<div class='item-data'>
@@ -36,9 +36,23 @@ The recommended Document structure for the use of Plugin code is as below
 	</div>
 </div>
 ```
------------------------------------------------------------------------------
-The CSS for the plugin is as below
+
+For above HTML, the jQuery code to initialize the plugin will be:
+```javascript
+$(document).ready(function(){
+	$('.container').simplestAccordion();
+})
 ```
+The above code can be written as following when passed with the options:
+```javascript
+$(document).ready(function(){
+  $('.container').simplestAccordion('.item', '.item-data', 'active');
+})
+```
+
+The CSS for the plugin is as below, you can add this in your regular CSS files and customize to fulfill oyur requirements
+
+```css
 .container {
 	display:block;
 	width: 500px;
